@@ -35,6 +35,25 @@ $(document).on('ready', function () {
 	});
 });
 
+$(document).on('ready', function () {
+	$(".galeria-lazer-elementum").slick({
+		draggable: false,
+		arrows: true,
+		dots: false,
+		infinite: true,
+	});
+});
+
+$(document).on('ready', function () {
+	$(".galeria-depoimento-elementum").slick({
+		draggable: false,
+		arrows: false,
+		dots: true,
+		infinite: true,
+		speed: 800,
+	});
+});
+
 $(document).ready(function () {
 	var colors = ["#f26722", "#abe0da", "#009db4", "#00582c", "#9a6326"],
 		i = 0;

@@ -1,7 +1,7 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default menu">
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-off-mobile">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                         <span class="sr-only">Toggle navigation</span>
@@ -9,7 +9,8 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="<?php echo base_url(); ?>home"><img class="img-responsive" src="<?= base_url(); ?>assets/images/logo.png" alt="Elementum Atibaia"></a>
+                    <a class="navbar-brand" href="<?php echo base_url(); ?>home"><img class="img-responsive" src="<?= base_url(); ?>assets/images/logo-elementum.png" alt="Elementum Atibaia"></a>
+                    <img class="lancamento img-responsive" src="<?= base_url(); ?>assets/images/bt-lancamento.png" alt="Lançamento">
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
@@ -27,40 +28,209 @@
         </div>
     </div>
 </nav>
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div class="galeria">
     <section class="galeria-elementum slider">
         <div>
-            <img class="img-responsive center-block" src="<?= base_url(); ?>assets/images/slide-01.png?1551369906080" alt="Elementum Residencial Atibaia">
+            <img class="img-responsive center-block hidden-xs" src="<?= base_url(); ?>assets/images/slide-01.jpg?1551369906080" alt="Elementum Residencial Atibaia">
+            <img class="img-responsive center-block visible-xs" src="<?= base_url(); ?>assets/images/slide-01-mobile.jpg?1551369906080" alt="Elementum Residencial Atibaia">
         </div>
         <div>
-            <img class="img-responsive center-block" src="<?= base_url(); ?>assets/images/slide-02.png?1551369906080" alt="Elementum Residencial Atibaia">
+            <img class="img-responsive center-block hidden-xs" src="<?= base_url(); ?>assets/images/slide-02.jpg?1551369906080" alt="Elementum Residencial Atibaia">
+            <img class="img-responsive center-block visible-xs" src="<?= base_url(); ?>assets/images/slide-02-mobile.jpg?1551369906080" alt="Elementum Residencial Atibaia">
         </div>
         <div>
-            <img class="img-responsive center-block" src="<?= base_url(); ?>assets/images/slide-03.png?1551369906080" alt="Elementum Residencial Atibaia">
+            <img class="img-responsive center-block hidden-xs" src="<?= base_url(); ?>assets/images/slide-03.jpg?1551369906080" alt="Elementum Residencial Atibaia">
+            <img class="img-responsive center-block visible-xs" src="<?= base_url(); ?>assets/images/slide-03-mobile.jpg?1551369906080" alt="Elementum Residencial Atibaia">
         </div>
         <div>
-            <img class="img-responsive center-block" src="<?= base_url(); ?>assets/images/slide-04.png?1551369906080" alt="Elementum Residencial Atibaia">
-        </div>
-        <div>
-            <img class="img-responsive center-block" src="<?= base_url(); ?>assets/images/slide-05.png?1551369906080" alt="Elementum Residencial Atibaia">
+            <img class="img-responsive center-block hidden-xs" src="<?= base_url(); ?>assets/images/slide-04.jpg?1551369906080" alt="Elementum Residencial Atibaia">
+            <img class="img-responsive center-block visible-xs" src="<?= base_url(); ?>assets/images/slide-04-mobile.jpg?1551369906080" alt="Elementum Residencial Atibaia">
         </div>
     </section>
 </div>
+<div class="video">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-lg-offset-1 text-center">
+                <p>A NATUREZA EM SUA
+                    <br class="visible-xs">
+                    NOVA ESSÊNCIA
+                </p>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+                <video width="100%" height="auto" controls>
+                    <source src="<?= base_url(); ?>assets/video/video.mp4" type="video/mp4">
+                    <source src="<?= base_url(); ?>assets/video/video.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="atibaia">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 padding-off">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <p class="txt1">
+                        <strong style="padding-left: 30px;">Atibaia,</strong><br>
+                        atrações e belezas<br>
+                        <span style="padding-left: 30px;">em todos so cantos.</span>
+                    </p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <div class="col-xs-6 padding-off">
+                        <p class="txt2">
+                            <strong style="color: #00582c;">•</strong> McDonald’s<br>
+                            <strong style="color: #00582c;">•</strong> Hospital Albert Sabin<br>
+                            <strong style="color: #00582c;">•</strong> Banco Itaú<br>
+                            <strong style="color: #00582c;">•</strong> Extra Mini Mercado
+                        </p>
+                    </div>
+                    <div class="col-xs-6 padding-off">
+                        <p class="txt2">
+                            <strong style="color: #00582c;">•</strong> COC Atibaia<br>
+                            <strong style="color: #00582c;">•</strong> Outlet Fernão Dias<br>
+                            <strong style="color: #00582c;">•</strong> Pq. Edmundo Zanoni
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 local">
+                <img class="img-responsive center-block hidden-xs" src="<?= base_url(); ?>assets/images/local.png" alt="Locais">
+                <img class="img-responsive center-block visible-xs" src="<?= base_url(); ?>assets/images/local01.png" alt="Locais">
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 info-local">
+                <p>
+                    Conhecida por ser uma das melhores estâncias climáticas do país,
+                    Atibaia é uma cidade cheiade atrações e encantos naturais.
+                </p>
+                <p>
+                    Sua atmosfera acolhedora atrai turistas de todos lugares, que buscam tranquilidade
+                    e adrenalina, seja apreciando a belíssima paisagem local ou saltando de paraglider
+                    de seu mais exuberantecartão postal, a Pedra Grande.
+                </p>
+                <p>
+                    Isso sem falar da famosa Festa do Morango e das Flores, que todos os anos encanta moradorese visitantes. Uma cidade linda de ver e viver, completa e repleta de serviços e lazer.
+                </p>
+                <p><strong>O lugar perfeito para você investir, morar e mudar de vida.</strong></p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="faixa-atibaia">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+                <img class="img-responsive center-block" src="<?= base_url(); ?>assets/images/loteamento.jpg" alt="Loteamento">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="lazer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-lg-offset-1 text-center">
+                <p>
+                    Lazer exclusivo
+                    <br class="visible-xs">
+                    e diferenciado
+                </p>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 thumb_lazer">
+                <img class="img-responsive center-block" src="<?= base_url(); ?>assets/images/thumb_lazer.png" alt="Lazer">
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+                <section class="galeria-lazer-elementum slider">
+                    <div>
+                        <img class="img-responsive center-block" src="<?= base_url(); ?>assets/images/lazer-01.jpg" alt="Elementum Residencial Atibaia">
+                    </div>
+                    <div>
+                        <img class="img-responsive center-block" src="<?= base_url(); ?>assets/images/lazer-01.jpg" alt="Elementum Residencial Atibaia">
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="depoimento">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-lg-offset-1 box">
+                <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 padding-off">
+                    <section class="galeria-depoimento-elementum slider">
+                        <div>
+                            <p>
+                                Um desafio cativante. Podemos definir assim nossa parceria com a<br>
+                                VICORP em mais um empreendimento magnífico: Elementum,<br>
+                                localizado na maravilhosa cidade de Atibaia. A exuberante natureza<br>
+                                local e a interação desta com os ambientes construídos (espaços de<br>
+                                esporte e lazer), além de um esplêndido projeto de paisagismo, que<br>
+                                enaltece os 4 elementos naturais, fundamentais à vida humana, faz<br>
+                                deste empreendimento um verdadeiro paraíso.
+                            </p>
+                            <p>
+                                O time de colaboradores da COMURB SPU deseja aos futuros<br>
+                                moradores uma vida plena de saúde, diversão, harmonia e união.<br>
+                                Outros quatro elementos para sua vida ser ainda melhor!<br>
 
+                                <span>Alan - COMURB SPU</span>
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                Um desafio cativante. Podemos definir assim nossa parceria com a<br>
+                                VICORP em mais um empreendimento magnífico: Elementum,<br>
+                                localizado na maravilhosa cidade de Atibaia. A exuberante natureza<br>
+                                local e a interação desta com os ambientes construídos (espaços de<br>
+                                esporte e lazer), além de um esplêndido projeto de paisagismo, que<br>
+                                enaltece os 4 elementos naturais, fundamentais à vida humana, faz<br>
+                                deste empreendimento um verdadeiro paraíso.
+                            </p>
+                            <p>
+                                O time de colaboradores da COMURB SPU deseja aos futuros<br>
+                                moradores uma vida plena de saúde, diversão, harmonia e união.<br>
+                                Outros quatro elementos para sua vida ser ainda melhor!<br>
 
+                                <span>Alan - COMURB SPU</span>
+                            </p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="seguranca">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-lg-offset-1 padding-off">
+                <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+                    <p class="txt1">
+                        SEGURANÇA COM MÁXIMA TECNOLOGIA:<br>
+                        ESTE É OUTRO ELEMENTO QUE NÃO IRÁ FALTAR
+                    </p>
+                    <p class="txt2">
+                        <span>Elementum respira segurança por todos os lados.</span>
+                    </p>
+                    <p class="txt2">
+                        Portaria <span>24 horas</span> com controle de acesso e reconhecimento facial,<br>
+                        além de um moderno sistema de câmeras para monitoramento.
+                    </p>
+                    <p class="txt2">
+                        Cobertura no perímetro com <span>câmeras de alta definição</span>,<br>
+                        cabeamento de fibra ótica com <span>sistema CFTV</span> e sala de<br>
+                        monitoramento. Rede de fibra ótica em todas ruas internas. WIFI no<br>
+                        clube social, complexo aquático, sede administrativa e praça dos esportes
+                    </p>
+                </div>
+                <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+                    <img class="img-responsive center-block" src="<?= base_url(); ?>assets/images/seguranca.png" alt="Segurança">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 
