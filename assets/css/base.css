@@ -202,7 +202,7 @@ p {
   position: fixed;
   right: 0;
   z-index: 999;
-  bottom: 90px;
+  bottom: 40%;
 }
 
 .float-box a {

@@ -265,7 +265,7 @@ p {
   position: fixed;
   right: 0;
   z-index: 999;
-  bottom: 90px;
+  bottom: 40%;
 }
 
 .float-box a {
@@ -821,7 +821,304 @@ p {
 /* Small */
 /* Medium */
 /* Large */
+.ficha-tecnica {
+  background-color: #d0e0b8;
+}
+
+.ficha-tecnica .i-ficha-tecnica {
+  padding-top: 13%;
+}
+
+.implantacao {
+  background-color: #eee9d8;
+}
+
+.implantacao .i-implantacao {
+  padding-top: 14%;
+}
+
+.endereco .box {
+  background-color: #ebebeb;
+  margin-top: 30px;
+}
+
+.endereco p {
+  font-family: 'Dax';
+  font-weight: 300;
+  font-style: normal;
+  color: #414042;
+  font-size: 20px;
+  line-height: 28px;
+  padding-top: 23px;
+}
+
+.endereco .clique-mapa {
+  margin-top: 25px;
+  display: block;
+}
+
+.endereco .waze {
+  margin-top: 15px;
+  display: block;
+}
+
 /* Extra Small */
+@media (max-width: 767px) {
+  .ficha-tecnica .i-ficha-tecnica {
+    width: 70%;
+    padding-top: 7%;
+  }
+  .implantacao .i-implantacao {
+    width: 80%;
+    padding-top: 9%;
+  }
+  .endereco .en {
+    max-width: 70%;
+  }
+  .endereco .box {
+    margin-top: 20px;
+  }
+  .endereco p {
+    font-size: 17px;
+    line-height: 25px;
+    padding-top: 15px;
+  }
+  .endereco .clique-mapa {
+    margin-top: 15px;
+  }
+  .endereco .waze {
+    margin-bottom: 10px;
+  }
+}
+
+/* Small */
+/* Medium */
+/* Large */
+.contato {
+  padding-top: 30px;
+}
+
+.contato .txt1 {
+  font-family: 'Proxima Nova Rg';
+  font-weight: bold;
+  font-style: normal;
+  color: #bd4520;
+  font-size: 25px;
+  line-height: 25px;
+}
+
+.contato .txt2 {
+  font-family: 'Proxima Nova Rg';
+  font-weight: normal;
+  font-style: normal;
+  color: #f16721;
+  font-size: 25px;
+  line-height: 28px;
+}
+
+.contato .elementum-contato {
+  margin-top: 30px;
+}
+
+.contato .whatsApp {
+  display: block;
+  margin-top: 20px;
+}
+
+.contato .redes {
+  margin-top: 20px;
+}
+
+.contato .redes div {
+  display: block;
+  float: right;
+}
+
+.contato .redes div a {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.contato .form-control {
+  font-family: 'Dax';
+  font-weight: 300;
+  font-style: normal;
+  height: 38px;
+  font-size: 16px;
+  color: #f16721;
+  border: 1px solid #f16721;
+  border-radius: 0px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.contato .form-control::-webkit-input-placeholder {
+  color: #f16721;
+}
+
+.contato .form-control:-ms-input-placeholder {
+  color: #f16721;
+}
+
+.contato .form-control::-ms-input-placeholder {
+  color: #f16721;
+}
+
+.contato .form-control::placeholder {
+  color: #f16721;
+}
+
+.contato .checkbox-inline {
+  font-family: 'Dax';
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  color: #f16721;
+}
+
+.contato .checkbox-inline a {
+  color: #f16721;
+  text-decoration: underline;
+}
+
+.contato textarea {
+  height: 130px !important;
+}
+
+.contato .btn_enviar {
+  font-family: 'Proxima Nova Rg';
+  font-weight: 500;
+  font-style: normal;
+  background-color: #088c43;
+  padding: 6px 15px;
+  font-size: 16px;
+  color: #FFF;
+  border: 0px solid transparent;
+  border-radius: 0px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  float: right;
+}
+
+/* Extra Small */
+@media (max-width: 767px) {
+  .contato .elementum-contato {
+    margin-top: 10px;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contato .whatsApp {
+    margin-top: 10px;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+}
+
+/* Small */
+/* Medium */
+/* Large */
+footer {
+  background-color: #f1f1f1;
+}
+
+footer figcaption,
+footer p {
+  font-family: 'Dax';
+  font-weight: normal;
+  font-style: normal;
+  color: #594c41;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+footer p {
+  padding-left: 15px;
+  padding-right: 15px;
+  line-height: 17px;
+}
+
+footer figcaption {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+footer .l {
+  border-left: solid 2px #dadada;
+}
+
+footer .menu-footer {
+  background-color: #073a20;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+footer .menu-footer p {
+  color: #fff;
+  margin-top: 20px;
+}
+
+footer .menu-footer .navbar-nav li {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+footer .menu-footer .navbar-nav li > a {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-family: 'Proxima Nova Rg';
+  font-weight: 300;
+  font-style: normal;
+  color: #fff;
+  font-size: 14px;
+  line-height: 14px;
+  border-right: 1px solid #fff;
+}
+
+footer .menu-footer .navbar-nav li > a:focus,
+footer .menu-footer .navbar-nav li > a:hover {
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+footer .menu-footer .navbar-nav li:last-child a {
+  border-right: 0px solid transparent;
+}
+
+/* Extra Small */
+@media (max-width: 767px) {
+  footer h6 {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 20px;
+  }
+  footer figcaption {
+    font-size: 11px;
+    line-height: 11px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  footer p {
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 12px;
+    line-height: 12px;
+  }
+  footer .l {
+    border-left: solid 0px;
+    border-bottom: solid 2px #000;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  footer .navbar-nav li > a {
+    border-right: 0px solid transparent;
+  }
+}
+
 /* Small */
 /* Medium */
 /* Large */
