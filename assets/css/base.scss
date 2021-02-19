@@ -249,7 +249,8 @@ p {
 }
 
 .modalMapa,
-.modalVideo {
+.modalFichaTecnica,
+.modalImplantacao {
     .close {
         color: #fff;
         text-shadow: none;
@@ -265,22 +266,12 @@ p {
     }
 
     .modal-dialog {
+        width: 1200px;
         margin: 50px auto;
     }
 
     .modal-body {
         padding: 0px;
-    }
-}
-
-.modalVideo {
-    background-color: rgba(0, 0, 0, 0.7);
-
-    .modal-content {
-        background-color: transparent;
-        border: 0px solid transparent;
-        border-radius: 0px;
-        box-shadow: none;
     }
 }
 
@@ -343,13 +334,15 @@ p {
     }
 
     .modalMapa,
-    .modalVideo {
+    .modalFichaTecnica,
+    .modalImplantacao {
         .close {
             top: -26px;
             right: 0px;
         }
 
         .modal-dialog {
+            width: auto;
             margin: 30% auto 0;
         }
     }

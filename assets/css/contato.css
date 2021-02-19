@@ -1,5 +1,6 @@
 .contato {
   padding-top: 30px;
+  padding-bottom: 20px;
 }
 
 .contato .txt1 {
@@ -108,9 +109,12 @@
 
 /* Extra Small */
 @media (max-width: 767px) {
+  .contato {
+    padding-top: 20px;
+  }
   .contato .elementum-contato {
     margin-top: 10px;
-    max-width: 70%;
+    max-width: 60%;
     margin-left: auto;
     margin-right: auto;
   }

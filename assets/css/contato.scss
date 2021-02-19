@@ -1,5 +1,6 @@
 .contato {
     padding-top: 30px;
+    padding-bottom: 20px;
     .txt1 {
         font-family: 'Proxima Nova Rg';
         font-weight: bold;
@@ -96,9 +97,10 @@
 /* Extra Small */
 @media(max-width:767px) {
     .contato { 
+        padding-top: 20px;
         .elementum-contato {
             margin-top: 10px;
-            max-width: 70%;
+            max-width: 60%;
             margin-left: auto;
             margin-right: auto;
         }

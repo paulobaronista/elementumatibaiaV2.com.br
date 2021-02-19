@@ -16,7 +16,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?= base_url(); ?>assets/images/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="<?= base_url(); ?>assets/images/apple-touch-icon-57-precomposed.png">
     <link rel="image_src" href="<?= base_url(); ?>assets/images/compartilhamento.png" />
-    <meta name="theme-color" content="#9a6326" />
+    <meta name="theme-color" content="#ec4c00" />
     <!-- property (faz funcionar no linkedin) -->
     <meta property="og:title" content="Elementum Residencial Atibaia" />
     <meta property="og:image" content="<?= base_url(); ?>assets/images/compartilhamento.png" />
@@ -33,7 +33,8 @@
     );
     echo meta($meta);
     echo link_tag('assets/css/bootstrap.min.css');
-    echo link_tag('assets/css/style.css?v=1.3.8');
+    echo link_tag('assets/css/style.css?v=1.5.7');
+    echo link_tag('assets/css/lightbox.min.css');
     echo link_tag('assets/css/slick.css');
     echo link_tag('assets/css/slick-theme.css');
     ?>

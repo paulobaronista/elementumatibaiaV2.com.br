@@ -23,6 +23,18 @@
   background-color: #68952d;
 }
 
+.depoimento h6 {
+  font-family: 'Proxima Nova Rg';
+  font-weight: normal;
+  font-style: normal;
+  color: #fff;
+  font-size: 30px;
+  line-height: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .depoimento .box {
   background: url(../images/bg-depoimento.jpg) no-repeat;
   background-position: center center;
@@ -49,6 +61,12 @@
   font-style: normal;
   padding-top: 10px;
   margin-right: 10%;
+  text-align: right;
+}
+
+.depoimento .box p span small {
+  font-size: 12px;
+  line-height: 12px;
 }
 
 .seguranca {
@@ -91,6 +109,11 @@
     padding-bottom: 20px;
   }
   .lazer p {
+    font-size: 25px;
+    line-height: 25px;
+    margin-bottom: 10px;
+  }
+  .depoimento h6 {
     font-size: 25px;
     line-height: 25px;
     margin-bottom: 10px;

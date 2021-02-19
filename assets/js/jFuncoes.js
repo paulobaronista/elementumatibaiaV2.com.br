@@ -1,10 +1,4 @@
 $(document).ready(function () {
-	$('#modalVideo').on('hidden.bs.modal', function () {
-		$('video').trigger('pause');
-	});
-});
-
-$(document).ready(function () {
 	$('#cookies').show();
 	$('body').css('overflow', 'hidden');
 	if (window.localStorage.getItem('accept_cookies')) {
@@ -55,22 +49,49 @@ $(document).on('ready', function () {
 });
 
 $(document).ready(function () {
-	var colors = ["#f26722", "#abe0da", "#009db4", "#00582c", "#9a6326"],
-		i = 0;
-	setInterval(function () {
-		$("meta[name='theme-color']").attr('content', colors[i]);
-		i++;
-		if (i >= colors.length) {
-			i = 0;
-		}
-	}, 5700);
-});
-
-$(document).ready(function () {
 	$("#close").click(function () {
 		$("#aviso").hide();
 		window.location.href = "https://www.elementumatibaia.com.br"
 	});
+});
+
+// Script Scroll OnPage
+$(document).ready(function () {
+    $(document).on("scroll", onScroll);
+    $('.scrollink').on('click', function (e) {
+        e.preventDefault();
+        $(document).off("scroll");
+        $('.scrollink').each(function () {
+            $(this).removeClass('active');
+        })
+        $(this).addClass('active');
+        var target = this.hash,
+            $target = $(target);
+        $('html, body').stop().animate({ scrollTop: $target.offset().top - 150 }, 500, 'swing', function () {
+            // window.location.hash = target;
+            $(document).on("scroll", onScroll);
+        });
+    });
+});
+
+function onScroll(event) {
+    var scrollPos = $(document).scrollTop();
+    $('#menuCenter .scrollink').each(function () {
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
+        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+            $('#menuCenter ul li .scrollink').removeClass("active");
+            currLink.addClass("active");
+        } else {
+            currLink.removeClass("active");
+        }
+    });
+}
+
+$(document).on('ready', function () {
+    $('.navbar-collapse a').click(function () {
+        $(".navbar-collapse").collapse('hide');
+    });
 });
 
 $(function () {

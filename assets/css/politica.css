@@ -1,11 +1,11 @@
 .politica {
-  padding-bottom: 50px;
+  padding-bottom: 30px;
+  padding-top: 47px;
 }
 
 .politica .politica-tt {
-  background-color: #9aca3c;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 100px;
+  padding-bottom: 0px;
 }
 
 .politica .politica-tt h3 {
@@ -40,6 +40,12 @@
 }
 
 /* Extra Small */
+@media (max-width: 767px) {
+  .politica {
+    padding-top: 27px;
+  }
+}
+
 /* Small */
 /* Medium */
 /* Large */

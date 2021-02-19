@@ -1,9 +1,11 @@
 .politica {
-    padding-bottom: 50px;
+    padding-bottom: 30px;
+    padding-top: 47px;
+
     .politica-tt {
-        background-color: #9aca3c;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: 100px;
+        padding-bottom: 0px;
+
         h3 {
             font-family: 'Proxima Nova Rg';
             font-weight: bold;
@@ -16,8 +18,10 @@
             padding: 0;
         }
     }
+
     .politica-info {
         margin-top: 30px;
+
         p {
             font-family: 'Proxima Nova Rg';
             font-weight: 300;
@@ -26,6 +30,7 @@
             font-size: 15px;
             line-height: 20px;
             margin-bottom: 10px;
+
             a {
                 color: #EC2c27;
                 text-decoration: underline;
@@ -37,7 +42,11 @@
 
 /* Extra Small */
 
-@media(max-width:767px) {}
+@media(max-width:767px) {
+    .politica {
+        padding-top: 27px;
+    }
+}
 
 
 /* Small */

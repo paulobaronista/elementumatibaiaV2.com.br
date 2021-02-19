@@ -320,7 +320,8 @@ p {
 }
 
 .modalMapa .close,
-.modalVideo .close {
+.modalFichaTecnica .close,
+.modalImplantacao .close {
   color: #fff;
   text-shadow: none;
   opacity: 1;
@@ -335,25 +336,16 @@ p {
 }
 
 .modalMapa .modal-dialog,
-.modalVideo .modal-dialog {
+.modalFichaTecnica .modal-dialog,
+.modalImplantacao .modal-dialog {
+  width: 1200px;
   margin: 50px auto;
 }
 
 .modalMapa .modal-body,
-.modalVideo .modal-body {
+.modalFichaTecnica .modal-body,
+.modalImplantacao .modal-body {
   padding: 0px;
-}
-
-.modalVideo {
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
-.modalVideo .modal-content {
-  background-color: transparent;
-  border: 0px solid transparent;
-  border-radius: 0px;
-  -webkit-box-shadow: none;
-          box-shadow: none;
 }
 
 .cookies {
@@ -412,12 +404,15 @@ p {
     width: 95%;
   }
   .modalMapa .close,
-  .modalVideo .close {
+  .modalFichaTecnica .close,
+  .modalImplantacao .close {
     top: -26px;
     right: 0px;
   }
   .modalMapa .modal-dialog,
-  .modalVideo .modal-dialog {
+  .modalFichaTecnica .modal-dialog,
+  .modalImplantacao .modal-dialog {
+    width: auto;
     margin: 30% auto 0;
   }
   .cookies .box {
@@ -471,6 +466,8 @@ p {
   line-height: 15px;
   padding-top: 17px;
   padding-bottom: 15px;
+  -webkit-transition: all 2ms ease;
+  transition: all 2ms ease;
 }
 
 .menu .navbar-nav > li > a:focus,
@@ -478,6 +475,8 @@ p {
   font-weight: bold;
   font-style: normal;
   color: #cd4d03;
+  -webkit-transition: all 2ms ease;
+  transition: all 2ms ease;
 }
 
 /* Extra Small */
@@ -712,6 +711,18 @@ p {
   background-color: #68952d;
 }
 
+.depoimento h6 {
+  font-family: 'Proxima Nova Rg';
+  font-weight: normal;
+  font-style: normal;
+  color: #fff;
+  font-size: 30px;
+  line-height: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .depoimento .box {
   background: url(../images/bg-depoimento.jpg) no-repeat;
   background-position: center center;
@@ -738,6 +749,12 @@ p {
   font-style: normal;
   padding-top: 10px;
   margin-right: 10%;
+  text-align: right;
+}
+
+.depoimento .box p span small {
+  font-size: 12px;
+  line-height: 12px;
 }
 
 .seguranca {
@@ -780,6 +797,11 @@ p {
     padding-bottom: 20px;
   }
   .lazer p {
+    font-size: 25px;
+    line-height: 25px;
+    margin-bottom: 10px;
+  }
+  .depoimento h6 {
     font-size: 25px;
     line-height: 25px;
     margin-bottom: 10px;
@@ -896,6 +918,7 @@ p {
 /* Large */
 .contato {
   padding-top: 30px;
+  padding-bottom: 20px;
 }
 
 .contato .txt1 {
@@ -1004,9 +1027,12 @@ p {
 
 /* Extra Small */
 @media (max-width: 767px) {
+  .contato {
+    padding-top: 20px;
+  }
   .contato .elementum-contato {
     margin-top: 10px;
-    max-width: 70%;
+    max-width: 60%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1023,7 +1049,9 @@ p {
 /* Medium */
 /* Large */
 footer {
+  border-top: solid 1px #dadada;
   background-color: #f1f1f1;
+  padding-top: 30px;
 }
 
 footer figcaption,
@@ -1051,10 +1079,19 @@ footer .l {
   border-left: solid 2px #dadada;
 }
 
+footer .box1 {
+  margin-bottom: 30px;
+}
+
+footer .box2 {
+  margin-top: 30px;
+}
+
 footer .menu-footer {
   background-color: #073a20;
   padding-top: 20px;
   padding-bottom: 20px;
+  margin-top: 30px;
 }
 
 footer .menu-footer p {
@@ -1077,6 +1114,7 @@ footer .menu-footer .navbar-nav li > a {
   font-size: 14px;
   line-height: 14px;
   border-right: 1px solid #fff;
+  text-transform: uppercase;
 }
 
 footer .menu-footer .navbar-nav li > a:focus,
@@ -1091,10 +1129,8 @@ footer .menu-footer .navbar-nav li:last-child a {
 
 /* Extra Small */
 @media (max-width: 767px) {
-  footer h6 {
-    font-size: 18px;
-    line-height: 23px;
-    margin-bottom: 20px;
+  footer {
+    padding-top: 20px;
   }
   footer figcaption {
     font-size: 11px;
@@ -1110,12 +1146,28 @@ footer .menu-footer .navbar-nav li:last-child a {
   }
   footer .l {
     border-left: solid 0px;
-    border-bottom: solid 2px #000;
+    border-bottom: solid 2px #dadada;
     padding-top: 20px;
     padding-bottom: 20px;
   }
+  footer .mms {
+    border-top: solid 2px #dadada;
+  }
+  footer .box1 {
+    margin-bottom: 0px;
+  }
+  footer .box2 {
+    margin-top: 0px;
+  }
   footer .navbar-nav li > a {
     border-right: 0px solid transparent;
+  }
+  footer .menu-footer {
+    margin-top: 0px;
+    background-color: green;
+  }
+  footer .img-responsive {
+    max-width: 50%;
   }
 }
 
@@ -1123,13 +1175,13 @@ footer .menu-footer .navbar-nav li:last-child a {
 /* Medium */
 /* Large */
 .politica {
-  padding-bottom: 50px;
+  padding-bottom: 30px;
+  padding-top: 47px;
 }
 
 .politica .politica-tt {
-  background-color: #9aca3c;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 100px;
+  padding-bottom: 0px;
 }
 
 .politica .politica-tt h3 {
@@ -1164,6 +1216,12 @@ footer .menu-footer .navbar-nav li:last-child a {
 }
 
 /* Extra Small */
+@media (max-width: 767px) {
+  .politica {
+    padding-top: 27px;
+  }
+}
+
 /* Small */
 /* Medium */
 /* Large */

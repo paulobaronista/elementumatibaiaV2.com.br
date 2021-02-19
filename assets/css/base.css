@@ -257,7 +257,8 @@ p {
 }
 
 .modalMapa .close,
-.modalVideo .close {
+.modalFichaTecnica .close,
+.modalImplantacao .close {
   color: #fff;
   text-shadow: none;
   opacity: 1;
@@ -272,25 +273,16 @@ p {
 }
 
 .modalMapa .modal-dialog,
-.modalVideo .modal-dialog {
+.modalFichaTecnica .modal-dialog,
+.modalImplantacao .modal-dialog {
+  width: 1200px;
   margin: 50px auto;
 }
 
 .modalMapa .modal-body,
-.modalVideo .modal-body {
+.modalFichaTecnica .modal-body,
+.modalImplantacao .modal-body {
   padding: 0px;
-}
-
-.modalVideo {
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
-.modalVideo .modal-content {
-  background-color: transparent;
-  border: 0px solid transparent;
-  border-radius: 0px;
-  -webkit-box-shadow: none;
-          box-shadow: none;
 }
 
 .cookies {
@@ -349,12 +341,15 @@ p {
     width: 95%;
   }
   .modalMapa .close,
-  .modalVideo .close {
+  .modalFichaTecnica .close,
+  .modalImplantacao .close {
     top: -26px;
     right: 0px;
   }
   .modalMapa .modal-dialog,
-  .modalVideo .modal-dialog {
+  .modalFichaTecnica .modal-dialog,
+  .modalImplantacao .modal-dialog {
+    width: auto;
     margin: 30% auto 0;
   }
   .cookies .box {

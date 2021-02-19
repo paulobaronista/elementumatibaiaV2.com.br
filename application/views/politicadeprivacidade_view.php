@@ -1,3 +1,33 @@
+<nav class="navbar navbar-default menu">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-off-mobile">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="<?php echo base_url(); ?>#home"><img class="img-responsive" src="<?= base_url(); ?>assets/images/logo-elementum.png" alt="Elementum Atibaia"></a>
+                    <img class="lancamento img-responsive" src="<?= base_url(); ?>assets/images/bt-lancamento.png" alt="Lançamento">
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="<?php echo base_url(); ?>#home">HOME</a></li>
+                        <li><a href="<?php echo base_url(); ?>#conceito">CONCEITO</a></li>
+                        <li><a href="<?php echo base_url(); ?>#galeria">GALERIA</a></li>
+                        <li><a href="<?php echo base_url(); ?>#seguranca">SEGURANÇA</a></li>
+                        <li><a href="<?php echo base_url(); ?>#ficha-tecnica">FICHA TÉCNICA</a></li>
+                        <li><a href="<?php echo base_url(); ?>#implantacao">IMPLANTAÇÃO</a></li>
+                        <li><a href="<?php echo base_url(); ?>#localizacao">LOCALIZAÇÃO</a></li>
+                        <li><a href="<?php echo base_url(); ?>#contato">CONTATO</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
 <div class="politica">
     <div class="container-fluid politica-tt">
         <div class="row">
